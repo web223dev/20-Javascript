@@ -6,5 +6,5 @@ This is a collection of 20 small projects I coded to practic pure Javascript con
 
 Here's a list of all the projects I coded for this challenge. You may see them all on this website I created to showcase them.
 
-1. Quote Generator
+1. Quote Generator\
     This is small app to fetch random quotes from an API via an async/wait function.
