@@ -5,40 +5,46 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
-function loading(){
+function showLoadingSpinner(){
     loader.hidden = false;
     quoteContainer.hidden = true;
 }
 
-function complete(){
-    loader.hidden = true;
-    quoteContainer.hidden = false;
-}
-
-function currentQuote(data){
-    quote.textContent = data.quoteText;
-    if(data.quoteAuthor === ''){
-        author.textContent = 'Unknown';
-    } else {
-        author.textContent = data.quoteAuthor;
+function removeLoadingSpinner(){
+    if(!loader.hidden){
+        loader.hidden = true;
+        quoteContainer.hidden = false;
     }
 }
 
+// Get Quote from API
 async function getQuote(){
-    loading();
+    showLoadingSpinner();
+    const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+    const proxyUrl = 'https://fast-stream-06353.herokuapp.com/';
     try {
-        const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-        const proxyUrl = 'https://fast-stream-06353.herokuapp.com/';
         const res = await fetch(proxyUrl + apiUrl);
         const data = await res.json();
-        currentQuote(data);
+        // If Author is blank, add 'Unknown'
+        if(data.quoteAuthor === ''){
+            authorText.innerText = 'Unknown';
+        } else {
+            authorText.innerText = data.quoteAuthor;
+        }
+        // Reduce FontSize for long quotes
+        if(data.quoteText.length > 120){
+            quoteText.classList.add('long-quote');
+        } else {
+            quoteText.classList.remove('long-quote');
+        }
+        quote.textContent = data.quoteText;
+        removeLoadingSpinner();
     } catch (error) {
         console.log('Oops', error);
     }
-    complete();
 }
 
-function addTwitter(){
+function tweetQuote(){
     const quote = quoteText.innerText;
     const author = authorText.innerText;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quote}-${author}`
@@ -47,7 +53,7 @@ function addTwitter(){
 
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuote);
-twitterBtn.addEventListener('click', addTwitter);
+twitterBtn.addEventListener('click', tweetQuote);
 
 // On Load
 getQuote();
