@@ -41,9 +41,11 @@ async function getQuote(){
         removeLoadingSpinner();
     } catch (error) {
         console.log('Oops', error);
+        getQuote();
     }
 }
 
+// Tweet Quote
 function tweetQuote(){
     const quote = quoteText.innerText;
     const author = authorText.innerText;
