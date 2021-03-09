@@ -8,5 +8,7 @@ Here's a list of all the projects I coded for this challenge. You may see them a
 
 1. [Quote Generator](/quote-generator)\
     This is small app to fetch random quotes from an API via an async/wait function.
-2. Infinite Scroll\
+2. [Infinite Scroll](/infinite-scroll)\
     For this project, I added "infinite scroll" to display images fetched from the Unsplash API.
+3. [Picture-in-Picture](/picture-in-picture)\
+    An app to share any screen from your computer and play picture-in-picture mode.
