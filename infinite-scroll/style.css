@@ -11,24 +11,23 @@ body {
     background: whitesmoke;
 }
 
-.header {
-    margin-top: 20px;
-}
-
 h1 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
     font-size: 2.5rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
+/* Loader */
 .loader {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .loader img {
@@ -38,10 +37,21 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+/* Image Container */
 .image-container {
-    margin: 0 auto 10px;
-    max-width: 500px;
+    margin: 10px 30%;
 }
 .image-container img{
     width: 100%;
+    margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+    .image-container{
+        margin: 10px;
+    }
 }
