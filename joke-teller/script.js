@@ -11,4 +11,23 @@ function test(){
     });
 }
 
+
+async function getJoke() {
+    try {
+        const url = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit'
+        const res = await fetch(url);
+        const data = await res.json();
+        let joke = '';
+        if (data.setup) {
+            joke = `${data.setup} ... ${data.delivery}`
+        } else {
+            joke = data.joke
+        }
+        console.log(joke);
+    } catch (error) {
+        // Catch Error Here
+    }
+}
+
 test();
+getJoke();
