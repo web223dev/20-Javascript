@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
 
 body {
     margin: 0;
@@ -54,6 +55,6 @@ button:disabled{
     }
     
     button{
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
     }
 }
