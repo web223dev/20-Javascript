@@ -1,6 +1,4 @@
 "use strict";
-const audioElement = document.getElementById('audio');
-
 var VoiceRSS = {
     speech: function (e) {
         this._validate(e), this._request(e);
