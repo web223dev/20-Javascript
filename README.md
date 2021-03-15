@@ -18,8 +18,9 @@ Here's a list of all the projects I coded for this challenge. You may see them a
     An app to share any screen from your computer and play picture-in-picture mode.\
     Live: [Here](https://20-javascript-picture-in-picture.vercel.app/) 
 
-4. [Joke Teller](/)\
-    An app that combines a Joke API, and a speech-to-text API.
+4. [Joke Teller](/joke-teller)\
+    An app that combines a Joke API, and a speech-to-text API.\
+    Live: [Here](https://web223dev.github.io/20-Javascript/joke-teller/)
 
 5. [Light & Dark Mode](/)\
     A website example that toggles between light and dark mode.
