@@ -22,8 +22,9 @@ Here's a list of all the projects I coded for this challenge. You may see them a
     An app that combines a Joke API, and a speech-to-text API.\
     Live: [Here](https://web223dev.github.io/20-Javascript/joke-teller/)
 
-5. [Light & Dark Mode](/)\
-    A website example that toggles between light and dark mode.
+5. [Light & Dark Mode](/light-dark-mode)\
+    A website example that toggles between light and dark mode.\
+    Live: [Here](https://web223dev.github.io/20-Javascript/light-dark-mode/)
 
 6. [Animated Template](/)\
     Using the Creative Tim Tailwind template, adding animate on scroll functionality.
