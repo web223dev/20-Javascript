@@ -106,3 +106,68 @@ img {
     height: 300px;
     width: 300px;
 }
+
+/* Project Section */
+.buttons {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+button {
+    min-width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    margin: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+button:hover:not(.outline) {
+    filter: brightness(110%);
+}
+
+.primary,
+.outline:hover {
+    background: var(--primary-color);
+    color: var(--on-primary);
+}
+
+.secondary {
+    border: 2px solid var(--secondary-color);
+}
+
+.secondary,
+.secondary:hover,
+.outline.secondary:hover{
+    background: var(--secondary-color);
+    color: var(--on-primary);
+}
+
+.outline {
+    background: var(--background);
+    color: var(--on-background);
+}
+
+.text-box {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    color: var(--on-primary);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0;
+    line-height: 25px;
+}
