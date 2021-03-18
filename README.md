@@ -4,7 +4,7 @@ This is a collection of 20 small projects I coded to practic pure Javascript con
 
 ## Projects
 
-Here's a list of all the projects I coded for this challenge. You may see them all on [this website](web223dev.github.io/20-javascript/) I created to showcase them.
+Here's a list of all the projects I coded for this challenge. You may see them all on [this website](https://web223dev.github.io/20-Javascript/) I created to showcase them.
 
 1. [Quote Generator](/quote-generator)\
     This is small app to fetch random quotes from an API via an async/wait function.\
