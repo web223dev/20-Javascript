@@ -4,7 +4,7 @@ This is a collection of 20 small projects I coded to practic pure Javascript con
 
 ## Projects
 
-Here's a list of all the projects I coded for this challenge. You may see them all on this website I created to showcase them.
+Here's a list of all the projects I coded for this challenge. You may see them all on [this website](web223dev.github.io/20-javascript/) I created to showcase them.
 
 1. [Quote Generator](/quote-generator)\
     This is small app to fetch random quotes from an API via an async/wait function.\
@@ -26,8 +26,9 @@ Here's a list of all the projects I coded for this challenge. You may see them a
     A website example that toggles between light and dark mode.\
     Live: [Here](https://web223dev.github.io/20-Javascript/light-dark-mode/)
 
-6. [Animated Template](/)\
-    Using the Creative Tim Tailwind template, adding animate on scroll functionality.
+6. [Animated Template](/animated-template)\
+    Using the Creative Tim Tailwind template, adding animate on scroll functionality.\
+    Live: [Here](https://web223dev.github.io/20-Javascript/animated-template)
 
 7. [Navigation Nation](/)\
     Creating an animated and responsive navigation.
